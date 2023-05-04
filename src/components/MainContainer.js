@@ -4,7 +4,7 @@ import ButtonList from './ButtonList'
 
 const MainContainer = () => {
   return (
-    <div className=''>
+    <div className='relative overflow-hidden'>
         <ButtonList/>
         <VideoContainer/>
     </div>
