@@ -32,6 +32,11 @@ const LiveChat = () => {
       </div>
       <form className="w-full p-2 ml-2 border border-black flex items-center" onSubmit={(e)=>{
         e.preventDefault()
+        dispatch(addMessage({
+            name:"Anubhav",
+            message:livemessage
+        }))
+        setLivemessage("")
       }}>
         <input className="w-96 p-1 m-1" type="text" placeholder="type something here.." value={livemessage} onChange={(e)=>{
             setLivemessage(e.target.value)
